@@ -1,13 +1,16 @@
 import React from 'react';
-import './App.css';
+import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
+
+import Index from './pages/Index';
 
 function App() {
   return (
-    <div className="App">
-      <header className="header">
-       
-      </header>
-    </div>
+    <BrowserRouter>
+      <Switch>
+        <Route path="/" exact render={props => <Index {...props} />} />
+        <Redirect to="/" />
+      </Switch>
+   </BrowserRouter>
   );
 }
 
