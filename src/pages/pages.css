@@ -1,0 +1,14 @@
+header{
+    background: url(../assets/images/hero_yellow_img.svg);
+    background-repeat: no-repeat;
+    background-size: 55%, contain;
+    background-position: right -10px top 0;
+    padding-bottom: 200px;
+}
+
+@media only screen and (max-width: 600px) {
+    header{
+        background-size: contain;
+        padding-bottom: 10px;
+    }
+  }

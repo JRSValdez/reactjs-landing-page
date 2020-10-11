@@ -23,7 +23,7 @@ const LPNavbar = (props) => {
         <Collapse isOpen={isOpen} navbar>
           <Nav className="mr-auto" navbar>
             <NavItem>
-              <NavLink href="">Acerca de</NavLink>
+              <NavLink href="#quienesSomos">Acerca de</NavLink>
             </NavItem>
             <NavItem>
               <NavLink href="">Restaurantes</NavLink>
