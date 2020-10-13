@@ -1,19 +1,32 @@
 import React from 'react'
 
-function TextButton({text,onClick, className}) {
+import './buttons.css';
 
-    const style = {
-        fontSize:'16px',
-        fontWeight:'bold',
-        textAlign:'left',
-        cursor:'pointer'
-    };
+function TextButton({text,onClick}) {
+
 
     return (
-        <p style={style} onClick={() => onClick} className={className}>
+        <p className='text-button' onClick={() => onClick} >
             {text}
         </p>
     )
 }
 
-export {TextButton}
+function SwitchButton({text, active,onClick}) {
+
+    const style = {
+        backgroundColor:active?'#000':'#FFF',
+        color:active?'#FFF':'#000'
+    }
+
+    return (
+        <div style={style} className='swicth-button mh-0' onClick={() => onClick()}>
+            <span>icon</span>
+            <p>{text}</p>
+        </div>
+    )
+}
+
+
+
+export {TextButton,SwitchButton}

@@ -22,8 +22,6 @@ function MainText({text, className, color ='#000', bg=false}) {
         color: color
     };
 
-    console.log(text,textStyle);
-
     return (
         <div className={className}>
             { splitedText.map((text,i) => (
