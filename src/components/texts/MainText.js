@@ -1,6 +1,6 @@
 import React from 'react'
 
-function MainText({text, className, color ='#000', bg=false}) {
+function MainText({text, className='main-text', color ='#000', bg=false}) {
 
     const splitedText = text.split('\n');
 

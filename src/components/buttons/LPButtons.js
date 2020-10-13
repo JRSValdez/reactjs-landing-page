@@ -2,8 +2,16 @@ import React from 'react'
 
 import './buttons.css';
 
-function TextButton({text,onClick}) {
+const SubmitButton = ({text}) => {
+    return (
+        <button type='button' className='submit-button'>
+            {text}
+        </button>
+    )
+}
 
+
+const TextButton = ({text,onClick}) => {
 
     return (
         <p className='text-button' onClick={() => onClick} >
@@ -12,7 +20,7 @@ function TextButton({text,onClick}) {
     )
 }
 
-function SwitchButton({text, active,onClick}) {
+const SwitchButton = ({text, active,onClick}) => {
 
     const style = {
         backgroundColor:active?'#000':'#FFF',
@@ -29,4 +37,4 @@ function SwitchButton({text, active,onClick}) {
 
 
 
-export {TextButton,SwitchButton}
+export {TextButton,SwitchButton,SubmitButton}

@@ -28,10 +28,11 @@ section .curly {
 /* testimonials */
 
 .testimonials {
-  background: url("../../assets/images/testimonials_bg_ketchup.png"), url("../../assets/images/red_splash_2.svg");
-  background-size:auto,contain;
+  background: url("../../assets/images/testimonials_bg_ketchup.png"),
+    url("../../assets/images/red_splash_2.svg");
+  background-size: auto, contain;
   background-repeat: no-repeat;
-  background-position: right 0 bottom -340px,right 0 bottom -100px;
+  background-position: right 0 bottom -340px, right 0 bottom -100px;
 }
 
 .carousel {
@@ -71,6 +72,43 @@ section .curly {
 } */
 
 /* testimonials */
+
+/* contact */
+
+.contact {
+  background-color: black;
+  color: white;
+  padding-left: 200px;
+  padding-right: 200px;
+  padding-bottom: 100px;
+}
+
+.contact input {
+  background-color: black;
+}
+
+.contact input:focus {
+  color: #ffc700;
+  background-color: black;
+  border-color: #ffc700;
+}
+
+.contact textarea {
+  background-color: black;
+}
+
+.contact textarea:focus {
+  color: #ffc700;
+  background-color: black;
+  border-color: #ffc700;
+}
+
+.contact-description {
+  color: white;
+  font-size: larger;
+}
+
+/* contact */
 
 @media only screen and (max-width: 600px) {
   section {
@@ -115,4 +153,10 @@ section .curly {
   }
 
   /* testimonials */
+
+  /* contact */
+  .contact {
+    padding: 20px;
+  }
+  /* contact */
 }

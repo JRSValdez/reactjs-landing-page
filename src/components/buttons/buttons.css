@@ -12,3 +12,17 @@
     padding: 10px;
     /* font-size: 4rem; */
 }
+
+.submit-button{
+    color:black;
+    font-weight: bold;
+    background: #FFD600;
+    font-size: large;
+    padding: 5px;
+    border-radius: 4px;
+    border: none;
+}
+
+.submit-button:hover{
+    background-color: #FFEA79;
+}
