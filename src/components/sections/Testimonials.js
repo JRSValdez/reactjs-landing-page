@@ -10,6 +10,8 @@ import {
 } from "reactstrap";
 
 import ketchup_img from "../../assets/images/testimonials_bg_ketchup.png";
+import splash_right from "../../assets/images/red_splash_2.svg";
+import splash_left from "../../assets/images/red_splash_1.svg";
 
 const items = [
   {
@@ -74,7 +76,9 @@ const Testimonials = (props) => {
   return (
     <section id="testimonials" className="testimonials">
       <Row>
-        <Col xs={1} sm={2} md={2} className="splash-left"></Col>
+        <Col xs={1} sm={2} md={2} className="splash-left">
+          <img className="splash-left img-fluid" alt="splash" src={splash_left} />
+        </Col>
         <Col xs={12} sm={8} md={8}>
           <Carousel activeIndex={activeIndex} next={next} previous={previous}>
             <CarouselIndicators
@@ -95,7 +99,10 @@ const Testimonials = (props) => {
             />
           </Carousel>
         </Col>
-        <Col xs={1} sm={2} md={2} className="splash-right"></Col>
+        <Col xs={1} sm={2} md={2} className="">
+          <img className="splash-right" alt="splash" src={splash_right} />
+          <img className="ketchup" alt="ketchup" src={ketchup_img} />
+        </Col>
       </Row>
     </section>
   );

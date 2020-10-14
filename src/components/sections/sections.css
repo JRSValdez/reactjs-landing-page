@@ -13,6 +13,8 @@ section {
   overflow-x: hidden;
 }
 
+/* quienes somos */
+
 section .curly {
   background: url(../../assets/images/curly_img.svg);
   background-repeat: no-repeat;
@@ -25,14 +27,13 @@ section .curly {
   bottom: 20px;
 }
 
+/* quienes somos */
+
 /* testimonials */
 
 .testimonials {
-  background: url("../../assets/images/testimonials_bg_ketchup.png"),
-    url("../../assets/images/red_splash_2.svg");
-  background-size: auto, contain;
-  background-repeat: no-repeat;
-  background-position: right 0 bottom -340px, right 0 bottom -100px;
+  padding-bottom: 200px;
+  padding-top: 120px;
 }
 
 .carousel {
@@ -58,18 +59,25 @@ section .curly {
 }
 
 .splash-left {
-  background: url("../../assets/images/red_splash_1.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: left;
+  position: absolute;
+  top: -30px;
+  transform: scale(0.9);
+  left: -5px;
 }
 
-/* .splash-right {
-  background: ;
-  background-size:contain;
-  background-repeat: no-repeat;
-  background-position: right 0 bottom -100px;
-} */
+.splash-right {
+  position: absolute;
+  top: 25px;
+  transform: scale(0.9);
+  right: -20px;
+}
+
+.ketchup {
+  position: absolute;
+  transform: scale(0.9);
+  right: -10px;
+  bottom: -100px;
+}
 
 /* testimonials */
 
@@ -78,9 +86,12 @@ section .curly {
 .contact {
   background-color: black;
   color: white;
+  position: relative;
+  top: -100px;
   padding-left: 200px;
   padding-right: 200px;
   padding-bottom: 100px;
+  z-index: -1;
 }
 
 .contact input {
@@ -109,6 +120,14 @@ section .curly {
 }
 
 /* contact */
+
+/* footer */
+.footer hr {
+  height: 1px;
+  background-color: #ffc700;
+  border: none;
+}
+/* footer */
 
 @media only screen and (max-width: 600px) {
   section {
@@ -141,11 +160,15 @@ section .curly {
   }
 
   .splash-left {
-    background: none;
+    display: none;
   }
 
-  .testimonials {
-    background: none;
+  .splash-right {
+    display: none;
+  }
+
+  .ketchup {
+    display: none;
   }
 
   .carousel .d-md-block {
@@ -159,4 +182,10 @@ section .curly {
     padding: 20px;
   }
   /* contact */
+
+  /* footer */
+  .footer-brand-text {
+    text-align: center;
+  }
+  /* footer */
 }

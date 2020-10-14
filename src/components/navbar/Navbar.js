@@ -3,11 +3,11 @@ import {
   Collapse,
   Navbar,
   NavbarToggler,
-  NavbarBrand,
   Nav,
   NavItem,
   NavLink
 } from "reactstrap";
+import BrandText from '../texts/BrandText';
 
 
 const LPNavbar = (props) => {
@@ -18,7 +18,7 @@ const LPNavbar = (props) => {
   return (
     <div>
       <Navbar color="light" light expand="md" className='bg-transparent'>
-        <NavbarBrand href="/">Foodies</NavbarBrand>
+        <BrandText className='brand-text' text='Foodies' href='/' />
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="mr-auto" navbar>
