@@ -26,10 +26,10 @@ const LPNavbar = (props) => {
               <NavLink href="#quienesSomos">Acerca de</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="">Restaurantes</NavLink>
+              <NavLink href="sucursales">Restaurantes</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="">Menú</NavLink>
+              <NavLink href="/menu">Menú</NavLink>
             </NavItem>
             <NavItem>
               <NavLink href="">Contáctanos</NavLink>

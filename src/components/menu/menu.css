@@ -1,0 +1,34 @@
+nav a {
+  color: white !important;
+}
+
+nav p {
+  color: white !important;
+}
+
+header {
+  background-color: black !important;
+  background: url("../../assets/images/hero_yellow_img_menu.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right -150px top 0;
+  padding-bottom: 0 !important;
+}
+
+.header-container {
+  padding-top: 50px;
+}
+
+header img {
+  position: relative;
+  top: -60px;
+}
+
+@media only screen and (max-width: 600px) {
+  header {
+    background: url("../../assets/images/hero_yellow_img_menu_xs.svg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: right -40px top 0;
+  }
+}

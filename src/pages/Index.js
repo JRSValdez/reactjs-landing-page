@@ -6,6 +6,7 @@ import Sucursales from "../components/sections/Sucursales";
 import Testimonials from '../components/sections/Testimonials';
 import Contact from '../components/sections/Contact';
 import Footer from '../components/sections/Footer';
+import DescargaApp from "../components/sections/DescargaApp";
 
 import "./pages.css";
 import "../components/sections/sections.css";
@@ -21,6 +22,7 @@ const Index = () => {
       <Sucursales />
       <Testimonials />
       <Contact />
+      <DescargaApp />
       <Footer />
     </React.Fragment>
   );

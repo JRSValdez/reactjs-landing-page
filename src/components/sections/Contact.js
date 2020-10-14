@@ -21,9 +21,9 @@ const Contact = () => {
         <Container>
           <Form>
             <Row form>
-              <Col sm={12} md={4}>
+              <Col sm={12} md={12} lg={4}>
                 <FormGroup>
-                  <Label for="contactName">Address</Label>
+                  <Label for="contactName">Name</Label>
                   <Input
                     type="text"
                     name="name"
@@ -32,7 +32,7 @@ const Contact = () => {
                   />
                 </FormGroup>
                 <FormGroup>
-                  <Label for="contactEmail">Address</Label>
+                  <Label for="contactEmail">Email</Label>
                   <Input
                     type="email"
                     name="email"
@@ -41,20 +41,20 @@ const Contact = () => {
                   />
                 </FormGroup>
               </Col>
-              <Col sm={12} md={8}>
+              <Col sm={12} md={12} lg={8}>
                 <FormGroup>
-                  <Label for="contactMensaje">Address</Label>
+                  <Label for="contactMensaje">Mensaje</Label>
                   <Input
                     type="textarea"
                     name="mensaje"
                     id="contactMensaje"
-                    placeholder="El día de ahpra mi experiencia fué..."
+                    placeholder="El día de ahora mi experiencia fué..."
                   />
                 </FormGroup>
               </Col>
             </Row>
             <Row>
-              <Col sm={12} md={{ size: 4, offset: 8 }}>
+              <Col sm={{ size: 4, offset: 8 }} md={{ size: 4, offset: 8 }}>
                 <SubmitButton text="Enviar comentario" />
               </Col>
             </Row>

@@ -29,9 +29,9 @@ const Footer = () => {
       </Row>
       <hr />
       <Row xs={1} md={options.length}>
-        {options.map(({ text, href }) => (
-          <Col>
-            <TextButton className='text-muted' text={text} href={href} />
+        {options.map( ( item, i ) => (
+          <Col key={i} >
+            <TextButton className='text-muted' text={item.text} href={item.href} />
           </Col>
         ))}
       </Row>

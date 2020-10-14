@@ -12,7 +12,7 @@ function Surcursales() {
 
   const [type, setType] = useState("takeaway");
 
-  const [error, setError] = useState({ error: false, message: "" });
+  // const [error, setError] = useState({ error: false, message: "" });
 
   useEffect(() => {
     try {

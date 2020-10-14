@@ -15,7 +15,7 @@ function MainText({text, className='main-text', color ='#000', bg=false}) {
 
     const bgTextStyle = {
         transform: 'rotate(0.64deg)',
-        color:color + ' !important'
+        color:color
     };
 
     const textStyle = {

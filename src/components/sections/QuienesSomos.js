@@ -13,7 +13,7 @@ function QuienesSomos() {
         <Col
           xs={12}
           sm={12}
-          md={7}
+          md={12}
           lg={7}
           className=" m-0 p-0"
         >
@@ -34,7 +34,7 @@ function QuienesSomos() {
         <Col
           xs={12}
           sm={12}
-          md={5}
+          md={12}
           lg={5}
           className="align-self-center p-4 curly"
         >
