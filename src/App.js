@@ -1,14 +1,14 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
-import Index from './pages/Index';
-import MenuPage from './pages/MenuPage';
+import Home from './pages/home';
+import {MenuPage as Menu} from './pages/menu';
 
 function App() {
   return (
     <BrowserRouter>
       <Switch>
-        <Route path="/" exact render={props => <Index {...props} />} />
-        <Route path="/menu" exact render={props => <MenuPage {...props} />} />
+        <Route path="/" exact render={props => <Home {...props} />} />
+        <Route path="/menu" exact render={props => <Menu {...props} />} />
         <Redirect to="/" />
       </Switch>
    </BrowserRouter>
