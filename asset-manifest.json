@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/reactjs-landing-page/static/css/main.281af3ab.chunk.css",
+    "main.js": "/reactjs-landing-page/static/js/main.6f024e09.chunk.js",
+    "main.js.map": "/reactjs-landing-page/static/js/main.6f024e09.chunk.js.map",
+    "runtime-main.js": "/reactjs-landing-page/static/js/runtime-main.6b559678.js",
+    "runtime-main.js.map": "/reactjs-landing-page/static/js/runtime-main.6b559678.js.map",
+    "static/css/2.8aa5a7f8.chunk.css": "/reactjs-landing-page/static/css/2.8aa5a7f8.chunk.css",
+    "static/js/2.d35aa77b.chunk.js": "/reactjs-landing-page/static/js/2.d35aa77b.chunk.js",
+    "static/js/2.d35aa77b.chunk.js.map": "/reactjs-landing-page/static/js/2.d35aa77b.chunk.js.map",
+    "index.html": "/reactjs-landing-page/index.html",
+    "precache-manifest.2643101972b791ae24b13ac39d51e561.js": "/reactjs-landing-page/precache-manifest.2643101972b791ae24b13ac39d51e561.js",
+    "service-worker.js": "/reactjs-landing-page/service-worker.js",
+    "static/css/2.8aa5a7f8.chunk.css.map": "/reactjs-landing-page/static/css/2.8aa5a7f8.chunk.css.map",
+    "static/css/main.281af3ab.chunk.css.map": "/reactjs-landing-page/static/css/main.281af3ab.chunk.css.map",
+    "static/js/2.d35aa77b.chunk.js.LICENSE.txt": "/reactjs-landing-page/static/js/2.d35aa77b.chunk.js.LICENSE.txt",
+    "static/media/curly_img.svg": "/reactjs-landing-page/static/media/curly_img.7bcf2e7a.svg",
+    "static/media/hero_hamburger.svg": "/reactjs-landing-page/static/media/hero_hamburger.2f738682.svg",
+    "static/media/hero_hamburger_menu.png": "/reactjs-landing-page/static/media/hero_hamburger_menu.0e08f7ad.png",
+    "static/media/hero_yellow_img.svg": "/reactjs-landing-page/static/media/hero_yellow_img.2467c9f6.svg",
+    "static/media/map1.jpg": "/reactjs-landing-page/static/media/map1.c6eea691.jpg",
+    "static/media/play_store.jpg": "/reactjs-landing-page/static/media/play_store.2808efb0.jpg",
+    "static/media/red_splash_1.svg": "/reactjs-landing-page/static/media/red_splash_1.f34d3d2f.svg",
+    "static/media/red_splash_2.svg": "/reactjs-landing-page/static/media/red_splash_2.1b499b64.svg",
+    "static/media/section2_img.jpg": "/reactjs-landing-page/static/media/section2_img.282bd0fc.jpg",
+    "static/media/smartphone.png": "/reactjs-landing-page/static/media/smartphone.6b7367dd.png",
+    "static/media/testimonials_bg_ketchup.png": "/reactjs-landing-page/static/media/testimonials_bg_ketchup.812c148b.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6b559678.js",
+    "static/css/2.8aa5a7f8.chunk.css",
+    "static/js/2.d35aa77b.chunk.js",
+    "static/css/main.281af3ab.chunk.css",
+    "static/js/main.6f024e09.chunk.js"
+  ]
+}
