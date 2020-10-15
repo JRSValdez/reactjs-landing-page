@@ -6,12 +6,16 @@ import Testimonials from '../../components/home/testimonials';
 import Contact from '../../components/home/Contact';
 import DescargaApp from "../../components/home/DescargaApp";
 import Footer from '../../components/common/footer';
-
+import styled from 'styled-components';
 import "../global.css";
+
+const HomeWrapper = styled.div`
+  background-color:#FFF;
+`;
 
 const Home = () => {
   return (
-    <React.Fragment>
+    <HomeWrapper>
       <Header />
       <QuienesSomos />
       <Sucursales />
@@ -19,7 +23,7 @@ const Home = () => {
       <Contact />
       <DescargaApp />
       <Footer />
-    </React.Fragment>
+    </HomeWrapper>
   );
 };
 

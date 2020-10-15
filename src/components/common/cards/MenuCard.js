@@ -8,21 +8,40 @@ import styled from "styled-components";
 import card_img from "../../../assets/images/imageProduct.png";
 
 const CardWrapper = styled.div`
-    &:hover{
-        background-color:white;
-        transform:scale(1.2);
-    }
+  position: relative;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  &:hover {
+    background-color: white;
+    overflow: hidden;
+  }
+
+  &:hover > .card-body {
+    top:0;
+    background-color: white;
+    padding-bottom: 10px;
+  }
 `;
 
-const MenuCard = () => {
+const CardBodyWrapper = styled.div`
+  position: relative;
+  top: -25px;
+  padding: 15px;
+  background-color: #eaeaea;
+  width:100%;
+`;
+
+const MenuCard = ({category,name,image,price,description}) => {
   return (
     <CardWrapper>
-      <MenuCardImage alt="test" src={card_img} />
-      <MenuCardBody
-        title="Test test"
-        description="1/2 Libra de carne envuelta en tocíno, con cebolla morada, queso cheddar, especias... "
-      />
-      <MenuCardFooter category="Recomendaciones" price="$794.00" />
+      <MenuCardImage alt="test" src={image} />
+      <CardBodyWrapper className="card-body">
+        <MenuCardBody
+          title={name}
+          description={description}
+        />
+        <MenuCardFooter category={category} price={price} />
+      </CardBodyWrapper>
     </CardWrapper>
   );
 };

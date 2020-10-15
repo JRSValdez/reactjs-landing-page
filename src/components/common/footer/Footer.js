@@ -24,13 +24,13 @@ const Footer = () => {
   const options = [
     { text: "Conoce nuestras sucursales", href: "#sucursales" },
     { text: "Acerca de", href: "#quienesSomos" },
-    { text: "Conoce nuestras sucursales", href: "#sucursales" },
+    { text: "Menú", href: "/menu" },
     { text: "Que hablan de nosotros?", href: "#testimonials" },
     { text: "Contactanos", href: "#contact" },
   ];
 
   return (
-    <FooterContainer className="m-5">
+    <FooterContainer className="mx-5">
       <Row xs={1} sm={2} md={2} lg={2}>
         <FooterBrandText>
           <BrandText text="Foodies" href="/" color='#7B7B7B' size='25' />

@@ -1,7 +1,3 @@
-import React, {useState,useEffect} from 'react';
-import MenuUI from './MenuUI';
+import Menu from './Menu';
 
-
-
-
-export default MenuUI;
+export default Menu;

@@ -13,12 +13,12 @@ const PriceText = styled.div`
 
 const CategoryText = styled.div`
   color: #78909c;
-  font-size: medium;
+  font-size: small;
 `;
 
 const MenuCardFooter = ({ category, price }) => {
   return (
-    <Row>
+    <Row xs={2} sm={2} md={2} lg={2}>
       <Col>
         <CategoryText>
           {category}
@@ -26,7 +26,7 @@ const MenuCardFooter = ({ category, price }) => {
       </Col>
       <Col>
         <PriceText>
-          {price}
+          ${price}
         </PriceText>
       </Col>
     </Row>

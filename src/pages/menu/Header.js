@@ -32,7 +32,7 @@ const TitleContainer = styled.div`
 const Header = () => {
   return (
     <HeaderContainer>
-      <LPNavbar darkMode={true} />
+      <LPNavbar darkmode='true' />
       <Row xs="1" sm="2" md="2">
         <Col className="order-2 order-md-1 order-sm-1">
           <TitleContainer>

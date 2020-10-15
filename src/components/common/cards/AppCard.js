@@ -5,7 +5,7 @@ import styled from "styled-components";
 const AppCardContainer = styled.div`
   text-align: center;
   padding: 10px;
-  max-width: 300px;
+  max-width: 260px;
 `;
 
 const Circle = styled.div`

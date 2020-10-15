@@ -1,24 +1,20 @@
-import React from 'react';
-import {Row,Col} from 'reactstrap';
-import MenuCard from '../common/cards/MenuCard';
+import React, { useContext } from "react";
+import { Row, Col } from "reactstrap";
+import MenuCard from "../common/cards/MenuCard";
+import { MenuContext } from "./Menu";
 
 const MenuList = () => {
-    return (
-        <Row lg={4} md={2} xs={1}>
-            <Col>
-                <MenuCard />
-            </Col>
-            <Col>
-                <MenuCard />
-            </Col>
-            <Col>
-                <MenuCard />
-            </Col>
-            <Col>
-                <MenuCard />
-            </Col>
-        </Row>
-    )
-}
+  const menuContext = useContext(MenuContext);
 
-export default MenuList
+  return (
+    <Row lg={4} md={2} xs={1} className="mt-4">
+      {menuContext.menuState.menu.map((item) => (
+        <Col key={item.id}>
+          <MenuCard {...item} />
+        </Col>
+      ))}
+    </Row>
+  );
+};
+
+export default MenuList;
