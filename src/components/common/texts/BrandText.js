@@ -6,6 +6,7 @@ import styled from "styled-components";
 
 const BrandLink = styled(Link)`
   text-decoration: none;
+  margin-right:30px;
   &:hover {
     text-decoration: none;
   }

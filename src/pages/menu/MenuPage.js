@@ -1,16 +1,14 @@
 import React from "react";
 import Header from "./Header";
-import LPNavbar from '../../components/common/navbar';
+import Footer from '../../components/common/footer';
 import Menu from "../../components/menu";
 
 const MenuPage = () => {
   return (
     <React.Fragment>
-      <header>
-        <LPNavbar />
-        <Header />
-      </header>
+      <Header />
       <Menu />
+      <Footer />
     </React.Fragment>
   );
 };
