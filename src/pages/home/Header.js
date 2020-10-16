@@ -58,7 +58,7 @@ const Header = () => {
               />
 
               <br></br>
-              <TextButton text="Encuentranos" className="mt-3" />
+              <TextButton text="Encuentranos" href='#sucursales' className="mt-3" />
             </div>
           </Col>
           <Col className="order-1 order-md-2 order-sm-2">

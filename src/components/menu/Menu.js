@@ -14,6 +14,7 @@ const initialState = {
   categories: [],
   menu: [],
   searchQuery: "",
+  showError:false
 };
 
 const Menu = () => {
@@ -29,7 +30,7 @@ const Menu = () => {
 
   return (
     <MenuContext.Provider value={{ menuState: menu, menuDispatch: dispatch }}>
-      <MenuUI />
+      <MenuUI showError={menu.showError} />
     </MenuContext.Provider>
   );
 };

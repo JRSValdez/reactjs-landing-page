@@ -66,7 +66,7 @@ function QuienesSomos() {
                            consequat culpa consectetur Lorem. Reprehenderit dolore culpa 
                            irure eiusmod minim occaecat et id minim ullamco.`}
             />
-            <TextButton text="Contáctanos" />
+            <TextButton text="Contáctanos" href='#contact' />
           </DescriptionContainer>
         </Col>
       </Row>

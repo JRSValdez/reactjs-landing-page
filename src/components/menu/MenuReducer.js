@@ -22,6 +22,7 @@ export const reducer = (state, action) => {
         nextPage: action.payload.links.next,
         prevPage: action.payload.links.prev,
         resetPagination: false,
+        showError: action.payload.meta.total === 0
       };
     case "CHANGE_PAGE":
       return {

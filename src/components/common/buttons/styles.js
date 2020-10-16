@@ -19,17 +19,19 @@ export const TextButtonStyle = styled.p`
   font-size: larger;
   font-weight: bold;
   text-align: left;
+  color: black;
   cursor: pointer;
   text-decoration: none;
   &:hover {
     text-decoration: none;
+    color: black;
   }
 `;
 
 export const FooterButtonStyle = styled(TextButtonStyle)`
   color: rgba(0, 0, 0, 0.4);
   font-size: large;
-  text-align:center;
+  text-align: center;
 `;
 
 export const SwitchButtonStyle = styled.div`

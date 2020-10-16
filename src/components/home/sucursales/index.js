@@ -12,8 +12,6 @@ function Surcursales() {
 
   const [type, setType] = useState("takeaway");
 
-  // const [error, setError] = useState({ error: false, message: "" });
-
   useEffect(() => {
     try {
       getSucursales();
@@ -23,7 +21,7 @@ function Surcursales() {
   }, [search, type]);
 
   const getSucursales = async () => {
-    if (search === "" || search.length > 3) {
+    if (search === "" || search.length > 2) {
       const response = await axios({
         method: "get",
         url: `${api_url}?type=${type}&query=${search}`,
