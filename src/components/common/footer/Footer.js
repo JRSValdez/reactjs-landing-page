@@ -22,11 +22,11 @@ const FooterBrandText = styled(Col)`
 
 const Footer = () => {
   const options = [
-    { text: "Conoce nuestras sucursales", href: "#sucursales" },
-    { text: "Acerca de", href: "#quienesSomos" },
+    { text: "Conoce nuestras sucursales", href: "/#sucursales" },
+    { text: "Acerca de", href: "/#quienesSomos" },
     { text: "Menú", href: "/menu" },
-    { text: "Que hablan de nosotros?", href: "#testimonials" },
-    { text: "Contactanos", href: "#contact" },
+    { text: "Que hablan de nosotros?", href: "/#testimonials" },
+    { text: "Contáctanos", href: "/#contact" },
   ];
 
   return (
