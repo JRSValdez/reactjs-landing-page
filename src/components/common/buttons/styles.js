@@ -15,6 +15,15 @@ export const SubmitButtonStyle = styled.button`
   }
 `;
 
+export const ThankYouButtonStyle = styled(SubmitButtonStyle)`
+  text-decoration: none;
+  text-align:center;
+  float: none;
+  &:hover {
+    text-decoration: none;
+  }
+`;
+
 export const TextButtonStyle = styled.p`
   font-size: larger;
   font-weight: bold;

@@ -4,6 +4,7 @@ import { Row, Col } from "reactstrap";
 import { ThankYouContainer } from "./styles";
 import MainText from "../../common/texts/MainText";
 import LightText from "../../common/texts/LightText";
+import {ThankYouButton} from '../../common/buttons/LPButtons';
 
 import thankYouImage from "../../../assets/images/thank_you_img.svg";
 
@@ -28,6 +29,9 @@ const ContactThankYou = (props) => {
             text="Don't miss out on our great offers & Receive deals from all our
                     top restaurants via e-mail."
           />
+        </Col>
+        <Col>
+          <ThankYouButton text='Conoce nuestro menu' to='/menu' />
         </Col>
       </Row>
     </ThankYouContainer>

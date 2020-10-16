@@ -51,8 +51,13 @@ export const ThankYouContainer = styled.div`
   position: absolute;
   background-color: black;
   height: 100% !important;
-  width:100%;
+  width:100% !important;
   align-items: center !important;
   justify-content:center;
+  overflow:hidden;
 
+  & p{
+    padding-right:5px;
+    padding-left:5px;
+  }
 `;
