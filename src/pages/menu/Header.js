@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, Col } from "reactstrap";
+import { Row, Col } from "reactstrap";
 import LPNavbar from "../../components/common/navbar";
 import MainText from "../../components/common/texts/MainText";
 import styled from "styled-components";

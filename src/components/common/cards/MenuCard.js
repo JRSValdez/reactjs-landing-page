@@ -5,8 +5,6 @@ import MenuCardBody from "./MenuCardBody";
 
 import styled from "styled-components";
 
-import card_img from "../../../assets/images/imageProduct.png";
-
 const CardWrapper = styled.div`
   position: relative;
   border-bottom-left-radius: 8px;

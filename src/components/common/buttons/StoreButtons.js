@@ -10,7 +10,7 @@ const StoreButtons = ({ className, apple_url, play_url }) => {
     <div className={className}>
       <Row xs={2}>
         <Col>
-          <Link to={apple_url} className="store-buttons">
+          <Link to={{pathname:apple_url}} target='_blank' >
             <img
               className="img-fluid"
               alt="Apple Store"
@@ -19,7 +19,7 @@ const StoreButtons = ({ className, apple_url, play_url }) => {
           </Link>
         </Col>
         <Col>
-          <Link to={play_url} className="store-buttons">
+          <Link to={{pathname:play_url}} target='_blank' >
             <img className="img-fluid" alt="Play Store" src={play_store_img} />
           </Link>
         </Col>

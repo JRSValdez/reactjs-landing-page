@@ -72,7 +72,7 @@ const LPNavbar = ({ darkmode = 'false' }) => {
       >
         <BrandNavText
           text="Foodies"
-          color={darkmode == 'true' ? "#FFF" : "#000"}
+          color={darkmode === 'true' ? "#FFF" : "#000"}
           size="28"
           href="/"
         />

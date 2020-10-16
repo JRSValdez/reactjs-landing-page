@@ -2,6 +2,9 @@ import React from "react";
 import styled from "styled-components";
 
 const MainTextStyle = styled.div`
+
+  font-family: 'Noto Sans', serif;
+
   & p {
     font-size: ${(props) => (props.size ? props.size + "px" : "60px")};
     line-height: ${(props) => (props.size ? props.size - 10 + "px" : "50px")};
@@ -17,7 +20,7 @@ const MainTextStyle = styled.div`
 
   @media only screen and (max-width: 600px) {
     font-size: ${(props) => (props.size ? props.size - 15 + "px" : "50px")};
-    line-height: ${(props) => (props.size ? props.size - 25 + "px" : "30px")};
+    line-height: ${(props) => (props.size ? props.size - 20 + "px" : "30px")};
   }
 `;
 

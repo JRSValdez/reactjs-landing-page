@@ -39,7 +39,7 @@ const MenuPagination = ({ onPaginate }) => {
   const dispatch = menuContext.menuDispatch;
 
   const pages = Array.apply(null, { length: totalPages }).map((item, i) => (
-    <PageNumber key={i} active={i + 1 == currentPage ? 1 : 0}>
+    <PageNumber key={i} active={(i + 1) === currentPage ? 1 : 0}>
       {i + 1}
     </PageNumber>
   ));

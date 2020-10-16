@@ -14,7 +14,7 @@ export const CustomNavItem = styled(NavItem)`
 
   & a {
     text-decoration: none;
-    color: ${(props) => (props.darkmode == 'true' ? "#FFF" : "#000")} !important;
+    color: ${(props) => (props.darkmode === 'true' ? "#FFF" : "#000")} !important;
   }
 
   & a:hover {

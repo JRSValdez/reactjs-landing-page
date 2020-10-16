@@ -1,66 +1,10 @@
 import React from "react";
 import { Col, Container, Row } from "reactstrap";
-import smarth_phone from "../../assets/images/smartphone.png";
-import MainText from "../common/texts/MainText";
-import AppCard from "../common/cards/AppCard";
+import smarth_phone from "../../../assets/images/smartphone.png";
+import MainText from "../../common/texts/MainText";
+import AppCard from "../../common/cards/AppCard";
 
-import styled from "styled-components";
-
-const AppContainer = styled.section`
-  position: relative;
-  top: -200px;
-  padding-top: 200px;
-  margin-bottom: -600px;
-
-  @media only screen and (min-width: 768px) and (max-width: 992px) {
-    top: -300px;
-  }
-
-  @media only screen and (max-width: 600px) {
-    top: -300px;
-  }
-`;
-
-const AppImgContainer = styled(Col)`
-  position: relative;
-  top: -200px;
-
-  @media only screen and (min-width: 768px) and (max-width: 992px) {
-    margin-bottom: -300px;
-  }
-`;
-
-const AppImg = styled.img`
-  top: -70px;
-  transform: scale(0.9);
-  left: 10%;
-  position: relative;
-
-  @media only screen and (min-width: 768px) and (max-width: 992px) {
-    top: -70px;
-    left: -30px;
-  }
-
-  @media only screen and (max-width: 600px) {
-    top: -220px;
-    transform: scale(0.6);
-    left: -200px;
-  }
-`;
-
-const AppBenefitsContainer = styled(Col)`
-  @media only screen and (min-width: 768px) and (max-width: 992px) {
-    position:relative;
-    top:-100px;
-    padding-bottom:200px;
-  }
-
-  @media only screen and (max-width: 600px) {
-    position:relative;
-    top:-700px;
-    margin-bottom:-400px;
-  }
-`;
+import {AppContainer,AppImgContainer,AppImg,AppBenefitsContainer} from './styles';
 
 const DescargaApp = () => {
   return (
@@ -73,10 +17,10 @@ const DescargaApp = () => {
           <Container>
             <Row>
               <Col>
-                <MainText size="35" text="Obten mas beneficios" center={true} />
+                <MainText size="35" text="Obten más beneficios" center={true} />
                 <MainText
                   size="35"
-                  text="Descarga nuestra app"
+                  text="Descarga nuestra App"
                   center={true}
                   bg={true}
                 />
@@ -93,7 +37,7 @@ const DescargaApp = () => {
               <Col>
                 <AppCard
                   number="02"
-                  title="Facil de usar"
+                  title="Fácil de usar"
                   desc={`Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.`}
                 />
               </Col>
