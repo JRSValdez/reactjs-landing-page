@@ -1,11 +1,19 @@
 ﻿# ReactJS Landing Page Test 
 
-Hi! this repo is a test project to apply to a React JS Front End job at Elaniin.
+Hi! this repo is a test project to apply to at React JS Front End job at Elaniin.
 
 ### Deployed app -> https://reactjs-lp-test.vercel.app
 #### Deployed mirror -> https://reactjs-lp-test.jrsvaldez.vercel.app
 
-# Installation
+# Table of contents
+
+ - [Installation](#Installation)
+ - [Dependencies](#Dependencies)
+ - [File Structure](#File-Structure)
+ - [TODOs](#TODOs)
+ - [Comments](#Comments)
+
+## Installation
 
 The project was created using **create-react-app** command.
 
@@ -51,5 +59,15 @@ The project was created using **create-react-app** command.
 		 - home
 		 - menu
 
+## TODOs
+
+ - [ ] Handling errors
+ - [ ] Some validations
+ - [ ] Add animations
+ - [ ] Map functionality
+
+## Comments
+> This project is made using functional components and using hooks (useState, useEffect,useReducer) and implementing Context API. Style is based on CSS in JS using styled-components.
+> The Landing Page is deployed using Vercel.
 
 ```
