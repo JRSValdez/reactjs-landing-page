@@ -2,7 +2,7 @@ import React from "react";
 import { Row, Col } from "reactstrap";
 import StoreButtons from "../buttons/StoreButtons";
 import BrandText from "../texts/BrandText";
-import { TextButton } from "../buttons/LPButtons";
+import { FooterButton } from "../buttons/LPButtons";
 
 import styled from "styled-components";
 
@@ -47,8 +47,7 @@ const Footer = () => {
       <Row xs={1} md={options.length}>
         {options.map((item, i) => (
           <Col key={i}>
-            <TextButton
-              className="text-muted"
+            <FooterButton
               text={item.text}
               href={item.href}
             />

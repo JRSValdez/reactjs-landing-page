@@ -1,6 +1,8 @@
 import React from "react";
 import { Row, Col } from "reactstrap";
 
+import { MdSearch } from "react-icons/md";
+
 import styled from "styled-components";
 
 const InputsContainer = styled(Row)`
@@ -16,8 +18,13 @@ const Input = styled.input`
   border-left-style: hidden;
   border-bottom-style: hidden;
 
-  &:focus{
+  &:focus {
     outline: none;
+  }
+
+  & svg {
+    position: relative;
+    margin: 5px;
   }
 `;
 
@@ -30,7 +37,7 @@ const SearchInput = ({ searchValue, onChangeSearch }) => {
   return (
     <InputsContainer>
       <Col xs={2} sm={2} md={3}>
-        icon
+        <MdSearch size='30' />
       </Col>
       <Col xs={10} sm={10} md={9}>
         <Input

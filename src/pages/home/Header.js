@@ -39,7 +39,7 @@ const HeaderContainer = styled(Container)`
 const Header = () => {
   return (
     <HeaderStyle>
-      <LPNavbar />
+      <LPNavbar darkmode='false' />
       <HeaderContainer>
         <Row xs="1" sm="2" md="2">
           <Col className="order-2 order-md-1 order-sm-1">

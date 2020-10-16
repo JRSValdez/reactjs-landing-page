@@ -4,6 +4,8 @@ import { SwitchButton } from "../../common/buttons/LPButtons";
 
 import styled from "styled-components";
 
+import { GiHamburger, GiTruck } from "react-icons/gi";
+
 const ButtonsContainer = styled(Row)`
   border-top-style: groove;
 `;
@@ -21,18 +23,16 @@ const SucursalType = ({ changeSucursalType }) => {
   return (
     <ButtonsContainer>
       <Col className="px-0">
-        <SwitchButton
-          active={adomicilio}
-          text="Para llevar"
-          onClick={() => changeOption(true)}
-        />
+        <SwitchButton active={adomicilio} onClick={() => changeOption(true)}>
+          <GiHamburger size='30'/>
+          <p>Para llevar</p>
+        </SwitchButton>
       </Col>
       <Col className="px-0">
-        <SwitchButton
-          active={!adomicilio}
-          text="A domicilio"
-          onClick={() => changeOption(false)}
-        />
+        <SwitchButton active={!adomicilio} onClick={() => changeOption(false)}>
+          <GiTruck size='30' />
+          <p>A domicilio</p>
+        </SwitchButton>
       </Col>
     </ButtonsContainer>
   );

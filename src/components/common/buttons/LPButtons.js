@@ -1,65 +1,43 @@
 import React from "react";
-import styled from "styled-components";
-
-const SubmitButtonStyle = styled.button`
-  color: black;
-  font-weight: bold;
-  background: #ffd600;
-  font-size: large;
-  padding: 5px;
-  border-radius: 4px;
-  border: none;
-
-  &:hover {
-    background-color: #ffea79;
-  }
-`;
+import {
+  SubmitButtonStyle,
+  TextButtonStyle,
+  SwitchButtonStyle,
+  FooterButtonStyle,
+} from "./styles";
+import { FiArrowRight } from "react-icons/fi";
 
 const SubmitButton = ({ text }) => {
-  return <SubmitButtonStyle type="button">{text}</SubmitButtonStyle>;
+  return <SubmitButtonStyle type="submit">{text}</SubmitButtonStyle>;
 };
 
-const TextBtutonStyle = styled.p`
-  font-size: 16px;
-  font-weight: bold;
-  text-align: left;
-  cursor: pointer;
-  text-decoration: none;
-
-  &:hover {
-    text-decoration: none;
-  }
-`;
-
-const TextButton = ({ text, href, className = "text-button" }) => {
+const TextButton = ({ text, href }) => {
   return (
     <a href={href}>
-      <TextBtutonStyle className={className}>{text}</TextBtutonStyle>
+      <TextButtonStyle>
+        {text}
+        <FiArrowRight className="ml-2" />
+      </TextButtonStyle>
     </a>
   );
 };
 
-const SwitchButtonStyle = styled.div`
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding: 10px;
-    background-color: ${ props => props.active ? "#000" : "#FFF" };
-    color: ${ props => props.active ? "#FFF" : "#000" };
-`;
-
-const SwitchButton = ({ text, active, onClick }) => {
-  const style = {
-    backgroundColor: active ? "#000" : "#FFF",
-    color: active ? "#FFF" : "#000",
-  };
-
+const SwitchButton = ({ active, onClick, children }) => {
   return (
     <SwitchButtonStyle active={active} onClick={() => onClick()}>
-      <span>icon</span>
-      <p>{text}</p>
+      {children}
     </SwitchButtonStyle>
   );
 };
 
-export { TextButton, SwitchButton, SubmitButton };
+const FooterButton = ({ text, href }) => {
+  return (
+    <a href={href}>
+      <FooterButtonStyle>
+        {text}
+      </FooterButtonStyle>
+    </a>
+  );
+};
+
+export { TextButton, SwitchButton, SubmitButton,FooterButton };
