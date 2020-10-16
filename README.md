@@ -1,6 +1,6 @@
 ﻿# ReactJS Landing Page Test 
 
-Hi! this repo is a test project to apply to at React JS Front End job at Elaniin.
+Hi! this repo is a test project to apply for a React JS Front End position at Elaniin.
 
 ### Deployed app -> https://reactjs-lp-test.vercel.app
 #### Deployed mirror -> https://reactjs-lp-test.jrsvaldez.vercel.app
